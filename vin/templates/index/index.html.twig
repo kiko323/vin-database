@@ -3,34 +3,31 @@
 {% block title %}CAR VIN DATABASE{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <hr>
+<div class="container">
     <a href="{{ path('car_add') }}">Add car</a>
-    <table>
+    <table class="table table-striped">
+        <thead>
         <tr>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Engine</th>
-            <th>Horse power</th>
-            <th>Vin</th>
-            <th>Action</th>
+            <th scope="col">Make</th>
+            <th scope="col">Model</th>
+            <th scope="col">Engine</th>
+            <th scope="col">Horse power</th>
+            <th scope="col">Vin</th>
+            <th scope="col">Action</th>
         </tr>
+        </thead>
         {% for car in cars %}
         <tr>
-            <td>{{ car.make }}</td>
+            <td scope="row">{{ car.make }}</td>
             <td>{{ car.model }}</td>
             <td>{{ car.engine }}</td>
             <td>{{ car.horsePower }}</td>
             <td>{{ car.vin }}</td>
-            <td><a href="{{ path('car_delete', {'id':car.id}) }}">DELETE</a></td>
+            <td><button onclick="location.href='{{ path('car_delete', {'id':car.id}) }}';" class="bg-danger">DELETE</button></td>
         </tr>
         {% endfor %}
-
     </table>
 </div>
+
 {% endblock %}

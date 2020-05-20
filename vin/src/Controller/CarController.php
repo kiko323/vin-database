@@ -57,7 +57,6 @@
       } catch (Exception $e) {
         echo $e->getMessage();
       }
-  
       
       return $this->redirectToRoute('index');
     }

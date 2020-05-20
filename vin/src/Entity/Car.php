@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Car
 {
+  const PAGINATED_RESULTS_NUMBER = 5;
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()

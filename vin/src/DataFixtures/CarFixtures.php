@@ -33,6 +33,61 @@
       $car->setVin('WF0DXXGAJD7C16951');
       
       $manager->persist($car);
+      /**
+       * Fiesta ST
+       */
+      $car = new Car();
+      $car->setEngine('2.0');
+      $car->setHorsePower(150);
+      $car->setMake('Ford');
+      $car->setModel('Fiesta ST150');
+      $car->setVin('WF0DXXGAJD7C16951');
+      
+      $manager->persist($car);
+      /**
+       * Fiesta ST
+       */
+      $car = new Car();
+      $car->setEngine('2.0');
+      $car->setHorsePower(150);
+      $car->setMake('Ford');
+      $car->setModel('Fiesta ST150');
+      $car->setVin('WF0DXXGAJD7C16951');
+      
+      $manager->persist($car);
+      /**
+       * Fiesta ST
+       */
+      $car = new Car();
+      $car->setEngine('2.0');
+      $car->setHorsePower(150);
+      $car->setMake('Ford');
+      $car->setModel('Fiesta ST150');
+      $car->setVin('WF0DXXGAJD7C16951');
+      
+      $manager->persist($car);
+      /**
+       * Fiesta ST
+       */
+      $car = new Car();
+      $car->setEngine('2.0');
+      $car->setHorsePower(150);
+      $car->setMake('Ford');
+      $car->setModel('Fiesta ST150');
+      $car->setVin('WF0DXXGAJD7C16951');
+      
+      $manager->persist($car);
+      /**
+       * Fiesta ST
+       */
+      $car = new Car();
+      $car->setEngine('2.0');
+      $car->setHorsePower(150);
+      $car->setMake('Ford');
+      $car->setModel('Fiesta ST150');
+      $car->setVin('WF0DXXGAJD7C16951');
+      
+      $manager->persist($car);
       
       $manager->flush();
       
